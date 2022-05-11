@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Home</title>
+        <link rel="stylesheet" href="IOTs.css">
+        <link rel="stylesheet" href="./../button1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="full">
+            <div class="title">
+                <div class="smart">
+                    <i class="fa-solid fa-house-laptop"></i>
+                    <a>Smart Home</a>
+                </div>
+                <div style="width: 5px; height: 80px; background-color: #fff; 
+                position: relative; top: 10px; left: 0px; border-radius: 25px; margin: 0px 50px;"></div>
+                <div class="welcome">
+                    <div class="icon">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+                    <div class="txt">
+                        <h1 class="txt1" style="color: aliceblue; margin:0px 10px;">Hello, Nam!</h1>
+                        <h2 class="txt2" style="color: aliceblue; margin:0px 10px;">Welcome back to the house for you! Wish you a great day.</h2>
+                    </div>
+                </div>
+                <div style="width: 5px; height: 80px; background-color: #fff; 
+                position: relative; top: 10px; left: 0px; border-radius: 25px; margin: 0px 50px;"></div>
+                <div class="door">
+                    <span id="the-door"></span>
+                </div>
+                <div class="my-home">
+                    <a target="" href="./../Iots.html ">
+                        <i class="fa-solid fa-house-user"></i>
+                    </a>
+                </div>
+            </div>
+            <div style="height: 10px; width: 95%; background-color: #fff; 
+            border-radius: 25px;position: relative; left: 40px;"></div>
+            <div class="control">
+                <div class="light">
+                    <div class="led-control">
+                        <div class="mt-ios" id="led1">
+                            <input id="1" type="checkbox" />
+                            <label for="1"></label> 
+                        </div>
+                        <div class="icon-led">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>bedroom</span>
+                        </div>
+                    </div>
+                    <div class="led-control">
+                        <div class="mt-ios" id="led2">
+                            <input id="2" type="checkbox" />
+                            <label for="2"></label> 
+                        </div>
+                        <div class="icon-led">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>living room</span>
+                        </div>
+                    </div>
+                    <div class="led-control">
+                        <div class="mt-ios" id="led3">
+                            <input id="3" type="checkbox" />
+                            <label for="3"></label> 
+                        </div>
+                        <div class="icon-led">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>bathroom</span>
+                        </div>
+                    </div>
+                    <div class="led-control">
+                        <div class="mt-ios" id="led4">
+                            <input id="4" type="checkbox" />
+                            <label for="4"></label> 
+                        </div>
+                        <div class="icon-led">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>kitchen</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 5px; height: 620px; background-color: #fff; 
+                position: relative; top: 10px; left: 0px; border-radius: 25px; margin: 0px 60px;"></div>
+                <div class="form">
+                    <div class="form-top">
+                        <div class="temp">
+                            <div class="icon-form">
+                                <i class="fa-solid fa-temperature-full"></i>
+                            </div>
+                            <span id="temperature"></span>
+                        </div>
+                        <div class="temp">
+                            <div class="icon-form">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <span id="humidity"></span>
+                        </div>
+                        <div class="temp">
+                            <div class="icon-form">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <span id="hour"></span>
+                            <span id="space">:</span>
+                            <span id="minute"></span>
+                        </div>
+                    </div>
+                    <div style="width: 100%; height: 5px; background-color: #fff; margin: 20px 0px; display: flex;"></div>
+                    <div class="things">
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc; border-radius: 25px;box-shadow: 0px 5px 30px rgb(146, 145, 145);
+                        -moz-box-shadow: 0px 5px 30px rgb(146, 145, 145);
+                        -webkit-box-shadow: 0px 5px 30px rgb(146, 145, 145);" 
+                        src="https://thingspeak.com/channels/1717138/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                        <iframe width="450" height="260" style="border: 1px solid #cccccc; border-radius: 25px;box-shadow: 0px 5px 30px rgb(146, 145, 145);
+                        -moz-box-shadow: 0px 5px 30px rgb(146, 145, 145);
+                        -webkit-box-shadow: 0px 5px 30px rgb(146, 145, 145);" 
+                        src="https://thingspeak.com/channels/1717138/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="IOTs.js"></script>
+</html>
